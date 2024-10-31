@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-
-<html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Dynatasker</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./bulma/css/bulma.min.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-       
-        
-        <script src="script.js" async defer></script>
-    </body>
+<html lang="fr" data-theme="$light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionnaire de Tâches</title>
+    <link rel="stylesheet" href="./Bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="has-text-centered is-size-4">Gestionnaire de Tâches</h1>
+        <form id="task-form" class="box has-text-centered">
+            <input type="text" id="task-title" placeholder="Titre de la tâche" required><br>
+            <textarea id="task-desc" placeholder="Description de la tâche"></textarea><br>
+            <input type="date" id="task-date" required><br>
+            <button type="submit">Ajouter Tâche</button>
+        </form>
+        <!-- <div class="filter-btns">
+            <button id="filter-all">Toutes</button>
+            <button id="filter-active">Actives</button>
+            <button id="filter-completed">Terminées</button>
+        </div> -->
+        <div id="task-list"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
 </html>

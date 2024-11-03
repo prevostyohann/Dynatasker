@@ -10,19 +10,20 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="has-text-centered is-size-4">Gestionnaire de Tâches</h1>
+        <h1 class="has-text-centered is-size-1 has-text-danger">Gestionnaire de Tâches</h1>
         <form id="task-form" class="box has-text-centered">
-            <input type="text" id="task-title" placeholder="Titre de la tâche" required><br>
-            <textarea id="task-desc" placeholder="Description de la tâche"></textarea><br>
-            <input type="date" id="task-date" required><br>
-            <button type="submit">Ajouter Tâche</button>
+            <input type="text" id="task-title" class="is-size-4 py-3" placeholder="Titre de la tâche" required><br><br>
+            <textarea id="task-desc" class="is-size-4" placeholder="Description de la tâche"></textarea><br><br>
+            <input type="date" id="task-date" class="is-size-4" required><br>
+            <button type="submit" class="py-6 has-text-centered has-text-success">Ajouter Tâche</button>
         </form>
-        <!-- <div class="filter-btns">
-            <button id="filter-all">Toutes</button>
-            <button id="filter-active">Actives</button>
-            <button id="filter-completed">Terminées</button>
-        </div> -->
-        <div id="task-list"></div>
+        <div class="filter-btns box has-text-centered has-text-white">
+            <button id="filter-all" class="mx-6">Toutes</button>
+            <button id="filter-active" class="mx-6">Actives</button>
+            <button id="filter-completed" class="mx-6">Terminées</button>
+        </div>
+        <div id="task-list" class="box py-5 has-text-centered has-text-white"></div>
+        
     </div>
     <script src="./script.js"></script>
 </body>
